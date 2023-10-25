@@ -1,0 +1,122 @@
+body {
+    background-color: #f8c366;
+    color: #45361c;
+}
+
+button {
+    background-color: #e09226;
+    color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h h h h"
+        "a a a a"
+        "m m y y"
+        "ja ja y y"
+        "la la y y"
+        "d d d d"
+        "c c c c"
+        "b b b b"
+        "l l l l"
+        "o o o o"
+        "f f f f"
+        ;
+
+}
+
+#header {
+    grid-area: h;
+}
+
+#about {
+    grid-area: a;
+}
+
+#music-header {
+    grid-area: m;
+}
+
+#japanese-breakfast-about {
+    grid-area: ja;
+}
+
+#little-big-league-about {
+    grid-area: la;
+}
+
+#youtube-video {
+    grid-area: y;
+}
+
+#discography {
+    grid-area: d;
+}
+
+#concert {
+    grid-area: c;
+}
+
+#books {
+    grid-area: b;
+}
+
+#links {
+    grid-area: l;
+}
+
+#contact {
+    grid-area: o;
+}
+
+#footer {
+    grid-area: f;
+}
+
+/* #japanese-breakfast-discography ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    padding: 0;
+    margin: 0em;
+}
+
+#japanese-breakfast-discography h4 {
+    text-align: center;
+    color: white
+}
+
+#little-big-league-discography ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+
+#little-big-league-discography h4 {
+    text-align: center;
+    color: white
+} */
+
+#links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
