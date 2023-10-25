@@ -27,9 +27,14 @@ button {
         ;
 
 }
-
 #header {
     grid-area: h;
+    background-color: #45361c;
+    color: white;
+}
+
+#header a {
+    color: white;
 }
 
 #about {
@@ -53,7 +58,13 @@ button {
 }
 
 #discography {
+    background-color: #e09226;
     grid-area: d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+                "jd ld"
 }
 
 #concert {
@@ -76,7 +87,11 @@ button {
     grid-area: f;
 }
 
-/* #japanese-breakfast-discography ul {
+#japanese-breakfast-discography {
+    grid-area: jd;
+}
+/* 
+#japanese-breakfast-discography ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -86,14 +101,18 @@ button {
     font-style: italic;
     padding: 0;
     margin: 0em;
-}
+} */
 
 #japanese-breakfast-discography h4 {
     text-align: center;
     color: white
 }
 
-#little-big-league-discography ul {
+#little-big-league-discography {
+    grid-area: ld;
+}
+
+/* #little-big-league-discography ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -103,13 +122,13 @@ button {
     font-style: italic;
     padding: 0;
     margin: 0;
-}
+} */
 
 
 #little-big-league-discography h4 {
     text-align: center;
     color: white
-} */
+}
 
 #links ul {
     list-style: none;
