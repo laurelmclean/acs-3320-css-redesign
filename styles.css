@@ -1,11 +1,31 @@
 body {
     background-color: #f8c366;
     color: #45361c;
+    font-size: 18px;
+    font-family: 'Amiko', sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;;
 }
 
 button {
     background-color: #e09226;
     color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
 }
 
 .wrapper {
@@ -14,31 +34,65 @@ button {
     grid-template-rows: auto;
     grid-template-areas:
         "h h h h"
-        "a a a a"
-        "m m y y"
+        "ai a a a"
+        "ai ap ap ap"
+        "m m m m "
         "ja ja y y"
         "la la y y"
         "d d d d"
         "c c c c"
         "b b b b"
+        "bi hm hm hm"
         "l l l l"
         "o o o o"
         "f f f f"
         ;
 
 }
-#header {
+header {
     grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    /* To space elements evenly */
+    align-items: center;
+    /* To vertically center elements */
     background-color: #45361c;
     color: white;
 }
 
-#header a {
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    font-size: 1.25em;
+    display: inline;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a {
     color: white;
 }
 
-#about {
+#about-header {
     grid-area: a;
+}
+
+#about-image {
+    grid-area: ai;
+}
+
+#about-paragraph {
+    grid-area: ap;
 }
 
 #music-header {
@@ -57,30 +111,84 @@ button {
     grid-area: y;
 }
 
+iframe {
+    display: block;
+    margin: auto;
+}
+
+#audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
 #discography {
     background-color: #e09226;
     grid-area: d;
     display: grid;
     grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-                "jd ld"
+    grid-template-rows: auto;
+    grid-template-areas:
+        "dh dh"
+        "jd ld"
+        "da da"
+}
+
+#discography h3 {
+    grid-area: dh;
+    text-align: center;
+}
+
+#audio {
+    grid-area: da;
+}
+
+#discography p {
+    grid-area: dp;
 }
 
 #concert {
     grid-area: c;
+    background-image: url(https://backend.xpn.org/wp-content/uploads/2022/07/DSC_7783.jpg);
+    background-size: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#books {
+#books-image {
+    grid-area: bi;
+}
+
+#books-header {
     grid-area: b;
+    display: flex;
+    justify-content: center;
+}
+
+#h-mart {
+    grid-area: hm;
 }
 
 #links {
     grid-area: l;
-}
-
-#contact {
-    grid-area: o;
 }
 
 #footer {
@@ -90,7 +198,7 @@ button {
 #japanese-breakfast-discography {
     grid-area: jd;
 }
-/* 
+
 #japanese-breakfast-discography ul {
     list-style: none;
     display: flex;
@@ -101,7 +209,7 @@ button {
     font-style: italic;
     padding: 0;
     margin: 0em;
-} */
+}
 
 #japanese-breakfast-discography h4 {
     text-align: center;
@@ -112,7 +220,7 @@ button {
     grid-area: ld;
 }
 
-/* #little-big-league-discography ul {
+#little-big-league-discography ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -122,7 +230,7 @@ button {
     font-style: italic;
     padding: 0;
     margin: 0;
-} */
+}
 
 
 #little-big-league-discography h4 {
@@ -138,4 +246,24 @@ button {
     gap: 15px;
     padding: 0;
     margin: 0;
+}
+
+#contact {
+    grid-area: o;
+    background-color: #45361c;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: #45361c;
+    padding: 1em;
+    margin: -1em;
+}
+
+#h-mart blockquote {
+    font-size: 2rem;
 }
