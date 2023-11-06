@@ -5,7 +5,7 @@ body {
     font-family: 'Amiko', sans-serif;
     line-height: 1.5;
     font-weight: 100;
-    margin: 0;
+    margin: 0 2rem;
 }
 
 body,
@@ -25,7 +25,19 @@ button {
     border-style: solid;
     border-color: white;
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    background-image: url('./Images/buy.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 40px;
+}
+
+button:hover {
+    background-color: white;
+    color: #e09226;
+    border-color: #e09226;
+
 }
 
 .wrapper {
@@ -53,11 +65,10 @@ header {
     grid-area: h;
     display: flex;
     justify-content: space-between;
-    /* To space elements evenly */
     align-items: center;
-    /* To vertically center elements */
     background-color: #45361c;
     color: white;
+    margin: 0 -2rem;
 }
 
 nav ul {
@@ -77,10 +88,15 @@ nav li {
 
 header a {
     text-decoration: none;
+    color: white;
 }
 
-header a {
-    color: white;
+header a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    padding-left: 2rem;
 }
 
 #about-header {
@@ -132,11 +148,12 @@ img {
 
 figcaption {
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
     font-style: italic;
 }
 
 #discography {
+    margin: 0 -2rem;
     background-color: #e09226;
     grid-area: d;
     display: grid;
@@ -171,6 +188,16 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 -2rem;
+    color: white;
+}
+
+#concert h3 {
+    font-size: 2rem;
+}
+
+#concert p {
+    font-size: 1.5rem;
 }
 
 #books-image {
@@ -189,6 +216,10 @@ figcaption {
 
 #links {
     grid-area: l;
+}
+
+#links li {
+    padding: 0.5rem;
 }
 
 #footer {
@@ -253,6 +284,11 @@ figcaption {
     background-color: #45361c;
     color: white;
     text-align: center;
+    margin: 0 -2rem;
+}
+
+#contact a {
+    color: white;
 }
 
 footer p {
@@ -261,9 +297,29 @@ footer p {
     color: white;
     background-color: #45361c;
     padding: 1em;
-    margin: -1em;
+    margin: 0 -2rem;
+}
+
+footer a {
+    color: white;
 }
 
 #h-mart blockquote {
+    font-size: 1.5rem;
+}
+
+h2 {
     font-size: 2rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.5rem;
 }
