@@ -27,16 +27,17 @@ button {
     border-radius: 10px;
     padding: 15px 15px;
     font-size: 1.5rem;
-    background-image: url('./Images/buy.png');
+    background-image: url('./Images/buy1.png');
     background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 40px;
+    background-position: 95%;
+    padding-right: 2.5em;
 }
 
 button:hover {
     background-color: white;
     color: #e09226;
     border-color: #e09226;
+    background-image: url('./Images/buy2.png');
 
 }
 

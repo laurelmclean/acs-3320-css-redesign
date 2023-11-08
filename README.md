@@ -6,9 +6,19 @@ Welcome to my project repository where I'll be documenting the process of redesi
 ## Intro
 Before diving into the details of my redesign, it's crucial to take a step back and understand the initial project's state. To achieve this, I captured screenshots of the original project in its original form. You can find these screenshots in the "Screenshots" directory of this repository. These 'before' images will help provide context and demonstrate the transformation achieved through the redesign process.
 
+### Before:
+
 ![Screenshot 1](Screenshots/screenshot1.png)
 ![Screenshot 2](Screenshots/screenshot2.png)
+![Screenshot](Screenshots/screenshot.png)
 ![Screenshot 3](Screenshots/screenshot3.png)
+
+### After:
+
+![Screenshot 1](Screenshots/newscreenshot1.png)
+![Screenshot 2](Screenshots/newscreenshot2.png)
+![Screenshot 3](Screenshots/newscreenshot3.png)
+![Screenshot 4](Screenshots/newscreenshot4.png)
 
 ## Project Requirements
 Here's a brief overview of the main challenges and goals I set out to achieve:
